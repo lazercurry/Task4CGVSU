@@ -1,18 +1,18 @@
 package com.cgvsu.math;
 
-// Это заготовка для собственной библиотеки для работы с линейной алгеброй
+/**
+ * Legacy-friendly mutable vector used by the OBJ model representation.
+ *
+ * Rendering/math pipeline uses immutable vectors in {@code com.cgvsu.math.vector.impl}.
+ */
 public class Vector3f {
-    public Vector3f(float x, float y, float z) {
+    public float x;
+    public float y;
+    public float z;
+
+    public Vector3f(final float x, final float y, final float z) {
         this.x = x;
         this.y = y;
         this.z = z;
     }
-
-    public boolean equals(Vector3f other) {
-        // todo: желательно, чтобы это была глобальная константа
-        final float eps = 1e-7f;
-        return Math.abs(x - other.x) < eps && Math.abs(y - other.y) < eps && Math.abs(z - other.z) < eps;
-    }
-
-    public float x, y, z;
 }

@@ -1,11 +1,14 @@
 package com.cgvsu.math;
 
-// Это заготовка для собственной библиотеки для работы с линейной алгеброй
+/**
+ * Legacy-friendly mutable 2D vector used by the OBJ model representation.
+ */
 public class Vector2f {
-    public Vector2f(float x, float y) {
+    public float x;
+    public float y;
+
+    public Vector2f(final float x, final float y) {
         this.x = x;
         this.y = y;
     }
-
-    public float x, y;
 }

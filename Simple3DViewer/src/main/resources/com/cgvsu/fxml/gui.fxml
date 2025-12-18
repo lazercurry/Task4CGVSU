@@ -15,7 +15,32 @@
                 <KeyCodeCombination alt="UP" control="DOWN" meta="UP" shift="UP" shortcut="UP" code="F"/>
             </accelerator>
             </MenuItem>
+
+            <MenuItem mnemonicParsing="false" onAction="#onSaveModelOriginalMenuItemClick" text="Save Model (Original)"/>
+            <MenuItem mnemonicParsing="false" onAction="#onSaveModelTransformedMenuItemClick" text="Save Model (With Transform)"/>
         </Menu>
+
+        <Menu mnemonicParsing="false" text="Model">
+            <MenuItem mnemonicParsing="false" onAction="#handleModelReset" text="Reset Transform"/>
+
+            <MenuItem mnemonicParsing="false" onAction="#handleModelTranslateXPlus" text="Translate +X"/>
+            <MenuItem mnemonicParsing="false" onAction="#handleModelTranslateXMinus" text="Translate -X"/>
+            <MenuItem mnemonicParsing="false" onAction="#handleModelTranslateYPlus" text="Translate +Y"/>
+            <MenuItem mnemonicParsing="false" onAction="#handleModelTranslateYMinus" text="Translate -Y"/>
+            <MenuItem mnemonicParsing="false" onAction="#handleModelTranslateZPlus" text="Translate +Z"/>
+            <MenuItem mnemonicParsing="false" onAction="#handleModelTranslateZMinus" text="Translate -Z"/>
+
+            <MenuItem mnemonicParsing="false" onAction="#handleModelRotateXPlus" text="Rotate +X"/>
+            <MenuItem mnemonicParsing="false" onAction="#handleModelRotateXMinus" text="Rotate -X"/>
+            <MenuItem mnemonicParsing="false" onAction="#handleModelRotateYPlus" text="Rotate +Y"/>
+            <MenuItem mnemonicParsing="false" onAction="#handleModelRotateYMinus" text="Rotate -Y"/>
+            <MenuItem mnemonicParsing="false" onAction="#handleModelRotateZPlus" text="Rotate +Z"/>
+            <MenuItem mnemonicParsing="false" onAction="#handleModelRotateZMinus" text="Rotate -Z"/>
+
+            <MenuItem mnemonicParsing="false" onAction="#handleModelScalePlus" text="Scale +"/>
+            <MenuItem mnemonicParsing="false" onAction="#handleModelScaleMinus" text="Scale -"/>
+        </Menu>
+
         <Menu mnemonicParsing="false" text="Camera Options">
             <MenuItem mnemonicParsing="false" onAction="#handleCameraForward" text="Forward">
                 <accelerator>
@@ -39,12 +64,12 @@
             </MenuItem>
             <MenuItem mnemonicParsing="false" onAction="#handleCameraUp" text="Up">
                 <accelerator>
-                    <KeyCodeCombination alt="UP" control="UP" meta="UP" shift="UP" shortcut="UP" code="W"/>
+                    <KeyCodeCombination alt="UP" control="UP" meta="UP" shift="UP" shortcut="UP" code="PAGE_UP"/>
                 </accelerator>
             </MenuItem>
             <MenuItem mnemonicParsing="false" onAction="#handleCameraDown" text="Down">
                 <accelerator>
-                    <KeyCodeCombination alt="UP" control="UP" meta="UP" shift="UP" shortcut="UP" code="S"/>
+                    <KeyCodeCombination alt="UP" control="UP" meta="UP" shift="UP" shortcut="UP" code="PAGE_DOWN"/>
                 </accelerator>
             </MenuItem>
         </Menu>
